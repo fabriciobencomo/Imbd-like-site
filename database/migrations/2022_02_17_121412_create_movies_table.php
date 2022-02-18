@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('duration');
             $table->string('cast');
             $table->integer('year');
-            $table->foreignId('category_id')->constrained();
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories');
         });
