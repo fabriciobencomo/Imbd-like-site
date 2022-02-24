@@ -14,6 +14,6 @@ class MovieSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }
